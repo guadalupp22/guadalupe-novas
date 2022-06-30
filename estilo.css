@@ -1,0 +1,362 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+/* todo lo general de la pagina */
+
+.contenedor{
+    width: 1320px;
+    margin: auto; 
+}
+
+.general{
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    flex-direction: column;
+   }
+
+/* barra de navegación */
+
+.comienzo{
+    margin-left: 70px;
+    margin-top: -55px;
+    font-size: 30px;
+    
+}
+.comienzo2{text-decoration: none;
+    color: #007fa600;}
+
+.barra{
+    position: fixed;
+    background: linear-gradient(180deg, rgba(0,128,166,1) 55%, rgba(0, 175, 184, 0) 100%);
+    width: 100vw;
+    height: 12vh;
+    padding: 10px;
+   
+}
+.barra-tipo{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 3rem;
+    margin-top: -30px;
+    
+}
+li{margin-right: 50px;
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    
+}
+
+.color-letra{color: aliceblue;
+    text-decoration: none}
+
+.color-letra:hover{
+    color: #ef7167;
+}
+
+.g-i-n{margin-left: 50px;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+/* aca empieza todo el resto del diseño de la pag */
+
+h1 {font-family: 'Fredericka the Great', cursive;
+  font-size: 100px;
+  text-align: left;
+  
+}
+h2 {font-family: 'Fredericka the Great', cursive;
+    font-size: 70px;
+    text-align: left
+}
+h3{font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+/* Parte de bienvenida */
+
+.bienvenidos{
+    background-image: url("img/pag-amarilla-mas-grande-23-23.svg");
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 10%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.intro{font-size: 30px;
+  width:700px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: justify;
+  margin-top: -40px;
+  margin-bottom: -3rem;
+}
+
+.foto-dragon{
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+/* setting para las imagenes de la pag */
+
+.cuadrado{
+  display: inline-block;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px;
+  color: #0080a6;
+}
+
+/* parte de los programas que se usar */
+
+.conocimientos{
+    display: block;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("img/fondo-azul_Mesa-de-trabajo-1-copia.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20%;    
+}
+.fondo-color{
+    background: rgb(0,128,166);
+    background: linear-gradient(180deg, rgba(0,128,166,1) 35%, rgba(0,174,184,1) 100%);
+    width: 100vw;
+    
+}
+
+.trabajo-con{margin-bottom: 20px;}
+
+.todos-cuadrados{
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.text-cono{
+    color: #0080a6;
+    margin-left: -3rem;
+    margin-top: -8rem;
+    margin-bottom: 5rem;
+}
+
+/* parte donde muestro algunos de los trabajos que hice hasta ahora, las fotos te llevan a la imagen completa */
+
+.mis-trabajos{
+ display: block;
+ width: 100vw;
+ height: 100vh;
+ margin-bottom: 140px;
+}
+.mis-trabajo-titulo {
+    color: aliceblue;
+    font-size: 60px;
+}
+
+.titulo-mis-trabajos{
+        background-image: url("img/linea-azul-ondulada.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 3%;
+        margin-top: -20px;
+    
+}
+
+.mis-trabajos-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo-programas{
+    margin: 20px
+}
+
+
+/*animacion de las imagenes*/
+
+.animacion{
+    -webkit-transition: 0.7s ease-out 0.3s;
+    -o-transition: 0.7s ease-out 0.3s;
+    transition: 0.7s ease-out 0.3s;
+
+}
+
+.animacion:hover{
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+    transform-origin: center center;
+    -webkit-transition: 0.5s ease-in 0.1s;
+    -o-transition: 0.5s ease-in 0.1s;
+    transition: 0.5s ease-in 0.1s;
+    }
+
+/*parte de los artistas*/
+
+.titulo-insp{
+    padding: 3%;
+}
+
+.cuadrado2{
+    display: inline-block;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 30px;
+    color: #0080a6;
+    
+  }
+  .todos-cuadrados2{
+    justify-content: center;
+    margin-left: 175px;
+    margin: 150px;
+}
+
+
+.inspiracion{
+    
+    background-image: url("img/pag-amarilla-mas-grande-23-23.svg");
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 10%;
+    justify-content: center;
+   margin-top: 130px;
+}
+
+.todo-insp{
+    margin-top: 120px;
+    justify-content:center;
+    margin-left: 20px;
+}
+
+.titulo-insp{ font-size: 46px;
+margin-left: -20px;}
+
+.intro-2{font-size: 22px;
+  width:700px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: justify;
+  margin-top: -10px;
+  margin-bottom: -150px;
+}
+
+.foto-table{
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
+  margin-left: -15px;
+}
+
+.tableta{
+    margin-top: 100px;
+    transform:rotate(-15deg);
+   }
+
+.partes{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -150px;
+    margin-left: 70px;
+}
+
+.dkng{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heikala{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jeremey{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombre{
+    margin-top: -55px;
+    color: #007fa600;
+}
+
+.H5{
+    margin-left: 55px;
+    margin-bottom: 20px;
+}
+
+.H6{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.H7{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.info{ border-radius: 100% 50%;}
+
+/*pie de pagina que te lleban a cada cosa*/
+footer{
+    background-image: url("img/linea-celes-ondulada-fondo-01.svg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    padding: 2%;
+    margin-top: -50px;
+}
+
+
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none; 
+    margin-top: 5px;
+    margin-left: -550px;
+}
+
+.fondo-cont{
+    background-image: url("img/linea-blanco-ondulada-fondo-02.svg");
+    background-repeat: no-repeat;
+    margin-left: 550px;
+    margin-top: -10px;
+}
